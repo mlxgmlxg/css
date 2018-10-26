@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GB2312">
+		<title></title>
+	</head>
+	<body>
+		<div class="bg">
+			
+		</div>
+		<div class="bg2">
+			
+		</div>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			div {
+				width: 800px;
+				height: 350px;
+				margin: 0 auto;
+			}
+			.bg {
+				background: linear-gradient(red,yellow);
+				animation: hScroll 3s infinite linear;
+			}
+			.bg2 {
+				background: linear-gradient(to left,black,white);
+				animation: vScroll 3s infinite linear;
+			}
+			@keyframes hScroll{
+				from{
+					background-position: 0 0;
+				}
+				to{
+					background-position: 0 -350px;
+				}
+			}
+			@keyframes vScroll{
+				from{
+					background-position: 0 0;
+				}
+				to{
+					background-position: -800px 0;
+				}
+			}
+		</style>
+	</body>
+</html>
