@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GB2312">
+		<title></title>
+		<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.js"></script>
+		<script src="js/jquery.lazyload.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			img 
+			{
+				width: 800px;
+				height: auto;
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+		  $(function() {
+		      $("img").lazyload({effect: "fadeIn"});
+		  });
+		</script>
+		<div class="container">
+			<img data-original="img/1.jpg"/>
+			<img data-original="img/2.jpg"/>
+			<img data-original="img/3.jpg"/>
+			<img data-original="img/4.jpg"/>
+		</div>
+		<!--来源：http://www.jq22.com/jquery-info390-->
+	</body>
+</html>
