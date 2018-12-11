@@ -14,7 +14,7 @@
     height: 100%;
     -webkit-transition: all 0.7s ease;
     -moz-transition: all 0.7s ease;
-    -ms-transform: all 0.7s ease;
+    -ms-transition: all 0.7s ease;
     transition: all 0.7s ease;
 }
 

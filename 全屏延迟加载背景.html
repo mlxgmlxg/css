@@ -6,7 +6,8 @@
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/layout.css"/>
 	</head>
-	<body class="page-loaded">
+	<body>
+		<h1 style="margin: 20px 0;text-align: center;">我是body</h1>
 		<div class="preloader">
 		    <div class="preloader-wrapper">
 		        <div class="loader">
@@ -24,5 +25,10 @@
 		        </div>
 		    </div>
 		</div>
+		<script type="text/javascript">
+			setTimeout(function(){
+				document.querySelector("body").classList.add("page-loaded")
+			},2000)
+		</script>
 	</body>
 </html>
