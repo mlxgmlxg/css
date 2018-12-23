@@ -3,12 +3,10 @@
 
 html,body{
     height: 100%;
-	background: #a8b1b6;
-	color: #2fa0ec;
 	font-weight: 500;
 	font-size: 1.05em;
 	font-family: "Microsoft YaHei","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
     overflow: hidden;
 }
-a{color: #d8dedc;outline: none;}
-a:hover,a:focus{color:#74777b;text-decoration: none;}
+a{color: #d8dedc;outline: none;text-decoration: none;}
+li{list-style: none;}
