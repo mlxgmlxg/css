@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>animation</title>
+</head>
+<style type="text/css">
+
+.test{
+ margin: 20% 10% 0 10%;
+ text-align: center;
+ height: 50px;
+}
+.test>div{
+width: 6px;
+height: 100%;
+background-color: green;
+display: inline-block;
+-webkit-animation: testAnimation 1.2s infinite ease-in-out;
+}
+.test .line1{
+-webkit-animation-delay:-0.5s;
+}
+.test .line2{
+-webkit-animation-delay:-0.6s;
+}
+.test .line3{
+-webkit-animation-delay:-0.7s;
+}
+.test .line4{
+-webkit-animation-delay:-0.8s;
+}
+.test .line5{
+-webkit-animation-delay:-0.9s;
+}
+
+/*定义指定的动画*/
+@-webkit-keyframes testAnimation{
+/*在执行到某一帧的时候调用指定的动作*/
+0%,40%,100%{
+-webkit-transform: scaleY(.4);
+}
+20%{
+-webkit-transform: scaleY(1);
+}
+}
+
+
+</style>
+<body>
+
+<div class="test">
+<div class="line1"></div>
+<div class="line2"></div>
+<div class="line3"></div>
+<div class="line4"></div>
+<div class="line5"></div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>文本输入控件</title>
+	</head>
+	<body>
+		<style type="text/css">
+			*{padding: 0;margin: 0;}
+			.xmp{-webkit-user-modify:read-write-plaintext-only;height: 100px;overflow: hidden;border: 2px dotted aqua;margin-bottom: 100px;}
+			.pre{-webkit-user-modify:read-write-plaintext-only;height: 100px;overflow: hidden;border: 2px dotted red;margin-bottom: 100px;}
+			.textarea{-webkit-user-modify:read-write-plaintext-only;overflow: hidden;border: 2px solid black;resize:none}
+		</style>
+		<xmp class="xmp">
+			<!--HTML4.01就被废除的标签-->
+			<b>这个b标签不会被转义，会被当作字符串完整的输出，此标签用来原样输出HTML标签</b>
+			<a href="https://baidu.com">百度一下</a>
+		</xmp>
+		<pre class="pre">
+			<!--继任者就是pre-->
+			<b>这个b标签会被转义</b>
+			<a href="https://baidu.com">百度一下</a>
+		</pre>
+		<textarea class="textarea" name="" rows="20" cols="50">
+			<b>这个b标签</b>
+			<a href="https://baidu.com">百度一下</a>
+		</textarea>
+	</body>
+</html>
